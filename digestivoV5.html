@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Síntesis Clínica: Aparato Digestivo</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #212529;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #007bff;
+        }
+        h3, h4 {
+            color: #343a40;
+        }
+        /* Estilo para las secciones principales colapsables */
+        details.seccion {
+            background: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        details.seccion > summary {
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding: 15px 20px;
+            cursor: pointer;
+            list-style: none; /* Oculta el marcador por defecto */
+            background-color: #f1f3f5;
+            border-bottom: 1px solid #dee2e6;
+            border-radius: 8px 8px 0 0;
+        }
+        details.seccion > summary::-webkit-details-marker {
+            display: none; /* Oculta marcador en Chrome/Safari */
+        }
+        details.seccion[open] > summary {
+            background-color: #e9ecef;
+            border-radius: 8px 8px 0 0;
+        }
+        .contenido-seccion {
+            padding: 20px;
+        }
+        
+        /* Estilo para las sub-secciones colapsables */
+        details.sub-seccion {
+            background: #fdfdfd;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        details.sub-seccion > summary {
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 10px 15px;
+            cursor: pointer;
+            list-style-position: inside;
+            background-color: #f8f9fa;
+        }
+        details.sub-seccion[open] > summary {
+            background-color: #f1f3f5;
+        }
+        .contenido-sub-seccion {
+            padding: 15px 15px 15px 40px; /* Indentación para el contenido */
+        }
+
+        /* Estilos para Tablas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        th, td {
+            border: 1px solid #ced4da;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #e9ecef;
+            font-weight: 600;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f8f9fa;
+        }
+        
+        /* Estilos para elementos especiales */
+        .perla-clinica {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffeeba;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .analogia {
+            background-color: #e6f7ff;
+            border-left: 5px solid #b3e0ff;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+        #indice {
+            background: #fff;
+            padding: 15px 25px;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+            margin-bottom: 25px;
+        }
+        #indice ul {
+            padding-left: 20px;
+        }
+        #indice li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Síntesis Clínica Detallada del Capítulo de Aparato Digestivo</h1>
+    <p>Actuando como experto en Semiología Médica, esta síntesis se basa exclusivamente en la información provista por los textos de referencia (Guía de Semiología de la U, Argente y Goic), priorizando la máxima utilidad clínica y la exhaustividad de los detalles semiológicos.</p>
+
+    <nav id="indice">
+        <h2>Índice Rápido</h2>
+        <ul>
+            <li><a href="#seccion1">I. Definiciones Clave</a></li>
+            <li><a href="#seccion2">II. Técnicas de Exploración del Abdomen (Semiología)</a></li>
+            <li><a href="#seccion3">III. Signos y Síntomas Cardinales, Correlación Clínica y Etiología</a></li>
+            <li><a href="#seccion4">IV. Síndromes Principales Desarrollados</a></li>
+        </ul>
+    </nav>
+
+    <details class="seccion" id="seccion1">
+        <summary>I. Definiciones Clave</summary>
+        <div class="contenido-seccion">
+            <table>
+                <tbody>
+                    <tr><td><strong>1. Disfagia:</strong></td><td>Dificultad para deglutir. Es la sensación de dificultad para trasladar el bolo alimenticio de la boca hacia el estómago.</td></tr>
+                    <tr><td><strong>2. Odinofagia:</strong></td><td>Dolor al deglutir.</td></tr>
+                    <tr><td><strong>3. Pirosis:</strong></td><td>Sensación de ardor o dolor punzante percibido por debajo del esternón. Se debe al reflujo del contenido gástrico ácido y puede ascender por el esófago.</td></tr>
+                    <tr><td><strong>4. Dispepsia:</strong></td><td>Dolor o malestar localizado en el abdomen superior, crónico o recurrente, de más de un mes de duración, a menudo desencadenado por la ingesta. Incluye síntomas como saciedad precoz, distensión abdominal, eructos, acidez y náuseas.</td></tr>
+                    <tr><td><strong>5. Vómito (Emesis):</strong></td><td>Expulsión forzada y enérgica de contenido gástrico por la boca, generalmente precedida de náuseas y arcadas.</td></tr>
+                    <tr><td><strong>6. Regurgitación:</strong></td><td>Retorno espontáneo de contenido gástrico hacia la boca o faringe, no precedido ni acompañado de náuseas.</td></tr>
+                    <tr><td><strong>7. Diarrea:</strong></td><td>Presencia de tres o más deposiciones líquidas en un período de 24 horas. Objetivamente, se define por un peso de heces diario superior a 200 gramos.</td></tr>
+                    <tr><td><strong>8. Constipación (Estreñimiento):</strong></td><td>Retardo en la evacuación de las heces, las que aparecen aumentadas de consistencia.</td></tr>
+                    <tr><td><strong>9. Melena:</strong></td><td>Deposición negra “como el alquitrán”, de consistencia pastosa y olor fuerte o penetrante que lo habitual. Es signo de hemorragia digestiva alta.</td></tr>
+                    <tr><td><strong>10. Hematemesis:</strong></td><td>Vómito de sangre. Puede ser roja clara u oscura, dependiendo del tiempo en el estómago.</td></tr>
+                    <tr><td><strong>11. Hematoquecia:</strong></td><td>Eliminación de deposiciones sanguinolentas, generalmente con sangre roja rutilante.</td></tr>
+                    <tr><td><strong>12. Ascitis:</strong></td><td>Acumulación anormal de líquido libre en la cavidad peritoneal. Se llama hemoperitoneo si acumula sangre.</td></tr>
+                    <tr><td><strong>13. Borborigmos:</strong></td><td>Ruidos hidroaéreos intestinales de aparición espontánea. Ruidos intestinales producidos por la mezcla de gases y líquidos.</td></tr>
+                    <tr><td><strong>14. Neumoperitoneo:</strong></td><td>Aire o gas en la cavidad peritoneal.</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </details>
+
+    <details class="seccion" id="seccion2" open>
+        <summary>II. Técnicas de Exploración del Abdomen (Semiología)</summary>
+        <div class="contenido-seccion">
+            <p>La sistemática habitual se modifica en el abdomen: <strong>Inspección, Auscultación, Percusión y Palpación</strong>. Esto previene que la palpación y percusión estimulen la motilidad intestinal, alterando los ruidos hidroaéreos (RHA).</p>
+            
+            <details class="sub-seccion">
+                <summary>A. Inspección</summary>
+                <div class="contenido-sub-seccion">
+                    <p>Se realiza tanto en reposo (estática) como con el paciente realizando maniobras (dinámica).</p>
+                    <h4>1. Forma y Contorno:</h4>
+                    <ul>
+                        <li><strong>Abdomen Globoso:</strong> Distendido totalmente (ej., obesidad, meteorismo).</li>
+                        <li><strong>Abdomen en Batracio:</strong> Paredes laterales aflojadas y líquido en regiones laterales, ombligo protruyente. Indica ascitis importante.</li>
+                        <li><strong>Abdomen Excavado (o Cóncavo):</strong> Puede asociarse a caquexia.</li>
+                    </ul>
+                    <h4>2. Signos Cutáneos y Vasculares:</h4>
+                    <ul>
+                        <li><strong>Circulación Colateral:</strong> Sugiere hipertensión portal (HTP).</li>
+                        <li><strong>Signo de Cullen:</strong> Equimosis periumbilical.</li>
+                        <li><strong>Signo de Grey Turner:</strong> Equimosis en los flancos. (Ambos sugieren pancreatitis necrohemorrágica).</li>
+                    </ul>
+                    <h4>3. Movimientos Peristálticos:</h4>
+                    <p>Las ondas peristálticas visibles sugieren obstrucción del intestino delgado.</p>
+                    <h4>4. Hernias y Eventraciones:</h4>
+                    <p>Se evalúan con la <strong>Maniobra del Esfuerzo</strong> (pedir que eleve la cabeza o piernas).</p>
+                </div>
+            </details>
+
+            <details class="sub-seccion">
+                <summary>B. Auscultación</summary>
+                <div class="contenido-sub-seccion">
+                    <h4>1. Ruidos Hidroaéreos (RHA):</h4>
+                    <ul>
+                        <li><strong>Frecuencia:</strong> Normal 5-30 RHA/min. Para asegurar ausencia, auscultar > 5 min.</li>
+                        <li><strong>Hallazgos Patológicos:</strong>
+                            <ul>
+                                <li><strong>Aumentados (Ruidos de Lucha):</strong> Característico de obstrucción intestinal mecánica. Tonalidad alta y metálica.</li>
+                                <li><strong>Silencio Abdominal:</strong> Ausencia total. Sugiere íleo paralítico o peritonitis generalizada.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Bazuqueo (Chapoteo) Gástrico:</strong> Sonido de líquido retenido al sacudir el epigastrio. Positivo 4-6h post-ingesta indica retención gástrica (síndrome pilórico).</li>
+                    </ul>
+                    <h4>2. Soplos:</h4>
+                    <p>Sugieren estenosis de arteria renal o aneurisma de aorta.</p>
+                </div>
+            </details>
+
+            <details class="sub-seccion">
+                <summary>C. Percusión</summary>
+                <div class="contenido-sub-seccion">
+                    <h4>1. Sonoridad:</h4>
+                    <p>Normal predominantemente timpánica. Matidez en órganos sólidos (hígado, bazo) o líquidos (vejiga, ascitis).</p>
+                    <h4>2. Matidez Desplazable y Signo de la Ola:</h4>
+                    <p>Técnicas para diagnosticar ascitis.</p>
+                    <h4>3. Matidez Hepática:</h4>
+                    <p>Su ausencia (<strong>Signo de Jobert</strong>) indica neumoperitoneo por perforación de víscera hueca.</p>
+                    <h4>4. Puñopercusión Lumbar:</h4>
+                    <p>Evalúa patología renal.</p>
+                </div>
+            </details>
+
+            <details class="sub-seccion">
+                <summary>D. Palpación (Técnica más Importante)</summary>
+                <div class="contenido-sub-seccion">
+                    <h4>1. Consideraciones Generales:</h4>
+                    <p>Suave, manos tibias, iniciando lejos de zona dolorosa.</p>
+                    <h4>2. Palpación Superficial:</h4>
+                    <p>Evalúa tensión y <strong>defensa abdominal</strong> (contracción voluntaria, sugestiva de inflamación serosa).</p>
+                    <h4>3. Palpación Profunda:</h4>
+                    <p>Delimitar vísceras y masas.</p>
+                    <ul>
+                        <li><strong>Ciego:</strong> En FID, puede palparse gorgoteante y doloroso (dispepsia fermentativa).</li>
+                        <li><strong>Sigmoide:</strong> En FII, puede palparse ("cuerda cólica") en SII.</li>
+                        <li><strong>Vísceras Macizas:</strong> Hígado, bazo, riñones.</li>
+                    </ul>
+                    <h4>4. Signos de Irritación Peritoneal (Perlas Clínicas):</h4>
+                    <ul>
+                        <li><strong>Abdomen en Tabla:</strong> Rigidez involuntaria extrema, implica peritonitis quirúrgica.</li>
+                        <li><strong>Signo de Blumberg:</strong> Dolor al retirar bruscamente la presión (localizado).</li>
+                        <li><strong>Signo de Guéneau de Mussy:</strong> Dolor a la descompresión generalizado (peritonitis generalizada).</li>
+                        <li><strong>Signo de Murphy:</strong> Detención abrupta de inspiración al palpar HCD (colecistitis aguda).</li>
+                        <li><strong>Signo del Psoas:</strong> Dolor en FID a la hiperextensión pasiva de cadera (apendicitis retrocecal).</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+    </details>
+
+    <details class="seccion" id="seccion3">
+        <summary>III. Signos y Síntomas Cardinales, Correlación Clínica y Etiología</summary>
+        <div class="contenido-seccion">
+
+            <details class="sub-seccion">
+                <summary>A. Dolor Abdominal</summary>
+                <div class="contenido-sub-seccion">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Característica</th>
+                                <th>Semiología Cardinal</th>
+                                <th>Correlación Fisiopatológica y Etiología</th>
+                                <th>Perlas Clínicas / DxD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Dolor Visceral</strong></td>
+                                <td>Sordo, vago, profundo, línea media. Mal localizado. Inquietud psicomotora (si es cólico).</td>
+                                <td>Distensión o contracción de víscera hueca. Ej.: Cólico biliar, Cólico intestinal.</td>
+                                <td>La inquietud diferencia el dolor cólico (visceral) del peritoneal (somático, inmóvil).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dolor Somático</strong></td>
+                                <td>Agudo, constante, bien localizado, intenso. Inmovilidad y defensa muscular.</td>
+                                <td>Origina en peritoneo parietal. Irritación química (bilis, jugo gástrico) o inflamatoria. Ej.: Apendicitis aguda.</td>
+                                <td>En apendicitis, el dolor migra de periumbilical (visceral) a FID (somático).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dolor Ulceroso</strong></td>
+                                <td>Urente o “vacío estomacal”. Periódico (épocas) y rítmico (relación ingesta). Epigastrio.</td>
+                                <td>Distensión/espasmo gástrico/duodenal + ácido. Causado por úlcera péptica (UG o UD).</td>
+                                <td>Alivio con ingesta (UD) o antiácidos. Dolor nocturno sugiere úlcera penetrante.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dolor Pancreático</strong></td>
+                                <td>Irradia al dorso (en transfixión). Epigastrio/hipocondrio.</td>
+                                <td>Inflamación (Pancreatitis aguda). El dolor <strong>no se alivia con el vómito</strong>.</td>
+                                <td>Posición antiálgica (plegaria mahometana).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+
+            <details class="sub-seccion">
+                <summary>B. Hemorragia Digestiva</summary>
+                <div class="contenido-sub-seccion">
+                    <p>Evaluar primero estabilidad hemodinámica (taquicardia, hipotensión ortostática).</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Manifestación</th>
+                                <th>Origen y Características</th>
+                                <th>Etiologías (DxD)</th>
+                                <th>Correlación Clínica</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Hematemesis</strong></td>
+                                <td>Exclusiva de HDA (proximal a Treitz). Roja (activa) u oscura/“borra de café” (inactiva).</td>
+                                <td>Úlcera Péptica (>60%), Várices Esofágicas (cirrosis/HTP), Mallory-Weiss, Gastritis erosiva.</td>
+                                <td>Melena coexiste en 70-80%. SNG clara no excluye HDA.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Melena</strong></td>
+                                <td>Heces negras, brillantes, pastosas, fétidas. Sangre en contacto con HCl y bacterias.</td>
+                                <td>Principalmente HDA. Rara vez HDB con tránsito lento.</td>
+                                <td>Tonalidad negro petróleo. Sospechar hemorragia oculta en anemia ferropénica.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hematoquecia / Rectorragia</strong></td>
+                                <td>Heces sanguinolentas o sangre fresca, rojo brillante.</td>
+                                <td>Diverticulosis (más frecuente HDB), Lesiones Anorrectales (hemorroides, fisuras), Neoplasias, EII (Colitis).</td>
+                                <td>Hematoquecia en HDA es de mal pronóstico (sangrado masivo). Rectorragia sugiere origen rectal.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+
+            <details class="sub-seccion">
+                <summary>C. Alteraciones de la Orina y Heces (Ictericia y Acolia)</summary>
+                <div class="contenido-sub-seccion">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Manifestación</th>
+                                <th>Definición</th>
+                                <th>Etiologías y Mecanismo Fisiopatológico</th>
+                                <th>Perlas Clínicas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Ictericia</strong></td>
+                                <td>Coloración amarilla de escleras, piel y mucosas por bilirrubina.</td>
+                                <td>Prehepática (hemólisis). Hepática (hepatitis, cirrosis). Posthepática/Colestásica (obstrucción biliar).</td>
+                                <td>Buscar en conjuntivas. Diferenciar de seudoictericia (carotenemia).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Acolia y Coluria</strong></td>
+                                <td>Heces blancas (acolia). Orina oscura (coluria, por bili conjugada).</td>
+                                <td>Obstrucción completa de vía biliar extrahepática (Coledocolitiasis, Ca Páncreas).</td>
+                                <td>Ausencia de ambas orienta a ictericia prehepática.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Esteatorrea</strong></td>
+                                <td>Deposiciones amarillentas, brillantes, aceitosas, flotan, olor rancio.</td>
+                                <td>Eliminación exagerada de grasas por malabsorción (Insuficiencia pancreática, Celíaca).</td>
+                                <td>Confirma malabsorción si grasa > 6 g/día.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+
+        </div>
+    </details>
+
+    <details class="seccion" id="seccion4">
+        <summary>IV. Síndromes Principales Desarrollados</summary>
+        <div class="contenido-seccion">
+
+            <details class="sub-seccion">
+                <summary>A. Síndrome Esofágico</summary>
+                <div class="contenido-sub-seccion">
+                    <p><strong>Componentes Cardinales:</strong> Disfagia, Pirosis, Dolor torácico, Regurgitación, Odinofagia.</p>
+                    <h4>1. Disfagia (Clasificación Semiologica):</h4>
+                    <ul>
+                        <li><strong>Orofaríngea (Alta):</strong> Dificultad al inicio. Asociada a tos y regurgitación nasal. Etiología: Neurológica (ACV, miastenia).</li>
+                        <li><strong>Esofágica (Baja):</strong> Dificultad retroesternal. Etiología: Mecánica (Cáncer, Estenosis) o Motora (Acalasia).</li>
+                    </ul>
+                    <h4>2. Perlas Clínicas de la Disfagia:</h4>
+                    <ul>
+                        <li>La progresión rápida de disfagia con baja de peso sugiere neoplasia.</li>
+                        <li>La acalasia se caracteriza por disfagia intermitente y progresiva (meses/años).</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="sub-seccion">
+                <summary>B. Síndrome Pilórico / Síndrome de Retención Gástrica</summary>
+                <div class="contenido-sub-seccion">
+                    <p>Obstrucción del vaciamiento gástrico.</p>
+                    <h4>Manifestaciones Clínicas Cardinales:</h4>
+                    <ol>
+                        <li><strong>Vómito (Síntoma Cardinal):</strong> Vómito de retención (8-12h post-ingesta, restos no digeridos). Abundante, alivia el dolor (si es úlcera).</li>
+                        <li><strong>Dolor Abdominal:</strong> Epigástrico. Si es neoplásica, es persistente.</li>
+                        <li><strong>Compromiso Nutricional:</strong> Saciedad precoz (60%), anorexia, pérdida de peso (65%).</li>
+                    </ol>
+                    <h4>Hallazgos Semiologicos Clave:</h4>
+                    <ul>
+                        <li><strong>Chapoteo Gástrico (Bazuqueo):</strong> Positivo 4-6h post-ingesta (atonía gástrica).</li>
+                        <li><strong>Inspección:</strong> Peristaltismo de lucha (inicial).</li>
+                    </ul>
+                    <p><strong>Etiología:</strong> Úlcera péptica (cicatriz) y cáncer gástrico (antral/pilórico).</p>
+                </div>
+            </details>
+
+            <details class="sub-seccion">
+                <summary>C. Síndrome Diarreico Crónico y DxD (Orgánico vs. Funcional)</summary>
+                <div class="contenido-sub-seccion">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Parámetro Semiologico</th>
+                                <th>Diarrea Funcional (SII)</th>
+                                <th>Diarrea Orgánica</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Temporalidad</strong></td>
+                                <td>Diurna (nunca nocturna). Frecuente matinal y posprandial.</td>
+                                <td>Diurna y Nocturna. Despertar nocturno es signo de alarma.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pérdida de Peso</strong></td>
+                                <td>Ausente. Conserva el peso.</td>
+                                <td>Presente (enflaquecimiento).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Elemento Patológico</strong></td>
+                                <td>Ausente (no pus, sangre, grasa).</td>
+                                <td>Presente (pus, sangre, esteatorrea).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dolor Abdominal</strong></td>
+                                <td>Común, cólico, aliviado por defecación.</td>
+                                <td>Puede estar presente, pero sin alivio claro.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Otros Síntomas</strong></td>
+                                <td>Síntomas emocionales. Distensión/Meteorismo.</td>
+                                <td>Anemia, fiebre, masa abdominal (signos de alarma).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><strong>SII (Criterios Roma IV):</strong> Dolor abdominal recurrente (1 día/sem) asociado a cambios en frecuencia/forma de heces.</p>
+                    <p><strong>Síndrome Disentérico:</strong> Diarrea con sangre, mucus y pus + pujo y tenesmo rectal. Indica rectitis/colitis.</p>
+                </div>
+            </details>
+
+            <details class="sub-seccion">
+                <summary>D. Obstrucción Intestinal (Íleo)</summary>
+                <div class="contenido-sub-seccion">
+                    <p>Interrupción de la progresión distal. Se divide en Paralítico (adinámico) y Mecánico (obstructivo).</p>
+                    <h4>Síntomas Cardinales (Íleo Mecánico):</h4>
+                    <ul>
+                        <li><strong>Dolor Abdominal Cólico:</strong> Ondulante y rítmico.</li>
+                        <li><strong>Vómitos:</strong> Precoces (alta) o fecaloideos (baja).</li>
+                        <li><strong>Falta de eliminación de deposiciones y gases.</strong></li>
+                    </ul>
+                    <h4>Signos Semiologicos Clave (DxD):</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tipo de Íleo</th>
+                                <th>Auscultación (RHA)</th>
+                                <th>Examen Físico Adicional</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Mecánico</strong></td>
+                                <td>Aumentados, tonalidad alta y metálica (<strong>Ruidos de lucha</strong>).</td>
+                                <td>Distensión. Rx: "pila de monedas".</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Paralítico</strong></td>
+                                <td><strong>Ausencia total (Silencio abdominal)</strong> desde el comienzo.</td>
+                                <td>Distensión abdominal.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+
+            <details class="sub-seccion">
+                <summary>E. Abdomen Agudo</summary>
+                <div class="contenido-sub-seccion">
+                    <p>Dolor abdominal intenso, de minutos u horas, que constituye una emergencia médico-quirúrgica.</p>
+                    <h4>Manifestaciones Cardinales:</h4>
+                    <ol>
+                        <li>Dolor Abdominal: Intenso, localizado o generalizado.</li>
+                        <li><strong>Inmovilidad del Paciente:</strong> Posición antiálgica, quieto.</li>
+                        <li><strong>Inversión de la Movilidad Respiratoria:</strong> Respiración predominantemente torácica.</li>
+                        <li><strong>Rigidez Abdominal (Abdomen en Tabla).</strong></li>
+                        <li><strong>Signos de Irritación Peritoneal:</strong> Blumberg o Guéneau de Mussy positivos.</li>
+                        <li><strong>Silencio Abdominal:</strong> Por íleo paralítico secundario.</li>
+                    </ol>
+                    <h4>Etiologías (Clasificación Operativa):</h4>
+                    <ul>
+                        <li><strong>Quirúrgicas:</strong> Apendicitis, Colecistitis, Diverticulitis, Perforación de úlcera, Obstrucción intestinal, Isquemia mesentérica.</li>
+                        <li><strong>No Quirúrgicas (Médicas):</strong> Neumonía, IAM (dolor epigástrico), Cólico renal, Cetoacidosis diabética.</li>
+                    </ul>
+                    <div class="perla-clinica">
+                        <strong>Perla Clínica (DxD):</strong> La perforación de víscera hueca se presenta con dolor súbito y puede llevar a la ausencia de matidez hepática (Signo de Jobert).
+                    </div>
+                </div>
+            </details>
+
+        </div>
+    </details>
+
+    <div class="analogia">
+        <h3>Metáfora: La Semiología del Abdomen</h3>
+        <p>La Semiología del Abdomen es como escuchar y sentir los tambores de una batalla interna. La inspección te dice si la carpa está caída (ascitis). La auscultación te dice si la lucha ha comenzado (<strong>Ruidos de Lucha</strong> en la obstrucción) o si ya terminó en un silencio sepulcral (<strong>Silencio Abdominal</strong> en peritonitis). La palpación te permite sentir si la pared está tan tensa como una armadura (<strong>Abdomen en Tabla</strong>), indicando que el peligro es inminente.</p>
+    </div>
+
+</body>
+</html>
